@@ -15,17 +15,21 @@
       </header>
 
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the French poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the French poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Flower, Paris or Cheese</div>
+        </div>
         <div class="poem" id="poem"></div>
       </main>
 
@@ -46,8 +50,8 @@
           href="https://french-poem-generator-five.vercel.app/"
           target="_blank"
         >
-          hosted on Netlify</a
-        >
+          hosted on Vercel
+        </a>
       </footer>
     </div>
 
